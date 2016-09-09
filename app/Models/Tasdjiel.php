@@ -48,4 +48,12 @@ class Tasdjiel extends Model
     {
         return $this->musaddjal;
     }
+
+    /**
+     * @return integer
+     */
+    public function getRaqam()
+    {
+        return $this->raqam;
+    }
 }

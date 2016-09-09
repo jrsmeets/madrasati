@@ -19,6 +19,7 @@ class CreateTableTasdjielaat extends Migration
             $table->foreign('sana_id')->references('id')->on('sanawaat');
             $table->foreign('tilmiedh_id')->references('id')->on('ashkhaas');
             $table->mediumInteger('musaddjal')->default(0);
+            $table->integer('raqam')->nullable();
         });
     }
 
