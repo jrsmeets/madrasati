@@ -15,7 +15,7 @@ class CreateTableSanawaat extends Migration
         Schema::create('sanawaat', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->integer('sana');
+            $table->integer('sana')->unique();
         });
     }
 
