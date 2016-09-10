@@ -20,5 +20,7 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::group(['middleware' => 'auth'], function () {
         Route::get('/home', 'HomeController@index');
+
+        Route::resource('sanawaat', 'SanawaatController', ['except' => ['show', 'edit', 'update']]);
     });
 });
